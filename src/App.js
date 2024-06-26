@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import DigiNavbar from './components/DigiNavbar';
+import Home from './components/Home';
+import Products from './components/Products';
+import NewArrival from './components/NewArrival';
+import Offers from './components/Offers';
+import Collections from './components/Collections';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>welcome to digiprofile</h1> */}
+      <DigiNavbar/>
+      {/* <div class="container-fluid"> */}
+      <Home/>
+      <Products/>
+      <NewArrival/>
+      <Offers/>
+      <Collections/>
+      <Footer/>
+      
     </div>
   );
 }
